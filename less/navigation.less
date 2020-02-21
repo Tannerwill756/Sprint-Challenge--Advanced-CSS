@@ -1,1 +1,29 @@
 // Navigation code here
+
+.navigation {
+    .displayflex(center, center);
+    flex-direction: column;
+    background-color: rgba(246,246,246,0.6);
+    position: fixed;
+    top: 0;
+    width: 100%;
+        
+    h1{
+        font-size: 4rem;
+        padding:2% 0;
+    }
+
+    .links{
+        width: 50%;
+        padding-bottom: 1%;
+        .displayflex(space-evenly, center);
+
+        @media @phone {
+            width: 90%;
+        }
+
+        a{
+            .navstyles(1.5rem, @header-font-color);
+        }
+    }
+}
