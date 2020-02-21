@@ -1,1 +1,24 @@
 // Mixins Here
+
+.displayflex(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.navstyles(@fontsize, @color){
+    text-decoration: none;
+    font-size: @fontsize;
+    color: @color;
+}
+
+// button mixins
+
+.buttonstyle(@bg-btn-color, @fontcolor, @btn-font-size){
+    background-color: @bg-btn-color;
+    color:@fontcolor;
+    font-size: @btn-font-size;
+    padding:3% 7%;
+    border-radius: 7px;
+    font-family: 'Ubuntu', sans-serif;
+}
